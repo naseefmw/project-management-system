@@ -7,3 +7,5 @@ How to run?
 - npm install in server & client
 - do npm install --legacy-peer-deps OR npm install --force in case of errors
 - npm start in server & client
+
+![Screenshot](/client/src/Images/screenshot.png?raw=true "Screenshot")
