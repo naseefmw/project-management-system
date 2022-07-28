@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #e7cbeb;
+  background-color: #f6a5c0;
   background-position: 50%;
   background-size: cover;
   height: 100vh;
@@ -14,13 +14,13 @@ export const Container = styled.div`
 export const Title = styled.h1`
   cursor: default;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   width: 100vw;
   margin-bottom: 1rem;
-  color: lightblue;
-  text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
-    -3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
+  color: black;
+  //text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
+  //-3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
   user-select: none;
 `;
 
@@ -42,8 +42,8 @@ export const Board = styled.div`
   color: white;
   padding: 0.6rem;
   margin: 0 0.8rem 1rem 0.8rem;
-  width: 200px;
-  height: 120px;
+  width: 190px;
+  height: 90px;
   border-radius: 5px;
   ${(props) =>
     props.isImage
@@ -67,13 +67,9 @@ export const Board = styled.div`
 `;
 
 export const AddBoard = styled(Board)`
-  background-color: #4b9fea;
-  /*background-image: linear-gradient(
-    to right,
-    #0b486b 0%,
-    #f56217 51%,
-    #0b486b 100%
-  );*/
+  width: 190px;
+  height: 90px;
+  background-color: #9778ce;
   font-size: 1.2rem;
   transition: 2s;
   opacity: 65%;

@@ -55,8 +55,8 @@ const LogoContainer = styled.div`
 `;
 
 const PMSLogo = styled.img`
-  width: 25px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 `;
 
