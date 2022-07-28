@@ -19,8 +19,6 @@ export const Title = styled.h1`
   width: 100vw;
   margin-bottom: 1rem;
   color: black;
-  //text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.8),
-  //-3px 0px 7px rgba(81, 67, 21, 0.8), 0px 4px 7px rgba(81, 67, 21, 0.8);
   user-select: none;
 `;
 
@@ -40,7 +38,9 @@ export const Wrapper = styled.div`
 
 export const Board = styled.div`
   color: white;
-  padding: 0.6rem;
+  padding: 33px 0;
+  text-align: center;
+  font-size: 1rem;
   margin: 0 0.8rem 1rem 0.8rem;
   width: 190px;
   height: 90px;
@@ -70,7 +70,7 @@ export const AddBoard = styled(Board)`
   width: 190px;
   height: 90px;
   background-color: #9778ce;
-  font-size: 1.2rem;
+  font-size: 1rem;
   transition: 2s;
   opacity: 65%;
   background-size: 200% auto;
