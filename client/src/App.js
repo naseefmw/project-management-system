@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Index from "./Components/Pages/IndexPage/Index";
 import Login from "./Components/Pages/LoginPage/Login";
 import Register from "./Components/Pages/RegisterPage/Register";
 import Alert from "./Components/AlertSnackBar";
