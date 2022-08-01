@@ -37,7 +37,7 @@ export const TitleCard = styled.div`
 `;
 
 export const Panel = styled.div`
-  background-image: url(${(props) => props.link});
+ background-color: violet;
   background-size: cover;
   background-position: center center;
   border-radius: 3px;
