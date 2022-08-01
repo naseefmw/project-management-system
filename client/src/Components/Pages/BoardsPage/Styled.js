@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #ffffff;
+  background-color: #fff;
   background-position: 50%;
   background-size: cover;
   height: 100vh;
@@ -43,7 +43,7 @@ export const Board = styled.div`
   font-size: 1rem;
   margin: 0 0.8rem 1rem 0.8rem;
   width: 200px;
-  height: 92px;
+  height: 90px;
   border-radius: 2px;
   ${(props) =>
     props.isImage
