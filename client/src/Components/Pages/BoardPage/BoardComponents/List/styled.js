@@ -15,7 +15,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 0.3rem;
-  border-radius: 3px;
+  border-radius: 2px;
   background-color: #ebecf0;
   padding: 0.3rem;
 `;
