@@ -74,7 +74,7 @@ const Board = (props) => {
       <style.Container
         isImage={isImage}
         bgImage={
-          isImage ? backgroundImageLink.split("?")[0] : backgroundImageLink
+          isImage ? "violet" : backgroundImageLink
         }
       >
         <TopBar />
