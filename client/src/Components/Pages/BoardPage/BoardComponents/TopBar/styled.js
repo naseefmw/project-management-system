@@ -44,12 +44,12 @@ export const InviteButton = styled.button`
   padding: 0rem 1rem;
   align-items: center;
   gap: 0.5rem;
-  border-radius: 2px;
-  background-color: #6e43a3;
+  border-radius: 3px;
+  background-color: #1e88e5;
   cursor: pointer;
   transition: 250ms ease;
   &:hover {
-    background-color: #330e62;
+    background-color: #0e4686;
   }
 `;
 
