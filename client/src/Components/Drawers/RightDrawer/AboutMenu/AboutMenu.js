@@ -87,6 +87,34 @@ const AboutMenu = () => {
 			<SectionContainer>
 				<SectionHeaderContainer>
 					<IconWrapper>
+						<MemberIcon fontSize='inherit' />
+					</IconWrapper>
+					<SectionTitle>Board Members</SectionTitle>
+				</SectionHeaderContainer>
+				{board.members
+					.filter((member) => member.role !== 'owner')
+					.map((member) => {
+						return (
+							<MemberSectionContainer key={member.email}>
+								<Avatar
+									sx={{ width: '3rem', height: '3rem', bgcolor: member.color, fontWeight: '800' }}
+								>
+									{member.name[0].toUpperCase()}
+								</Avatar>
+								<MemberInfoContainer>
+									<MemberName>{`${member.name.replace(
+										/^./,
+										member.name[0].toUpperCase()
+									)} ${member.surname.toUpperCase()}`}</MemberName>
+									<MemberEmail>{member.email}</MemberEmail>
+								</MemberInfoContainer>
+							</MemberSectionContainer>
+						);
+					})}
+			</SectionContainer>
+			<SectionContainer>
+				<SectionHeaderContainer>
+					<IconWrapper>
 						<DescriptionIcon fontSize='inherit' />
 					</IconWrapper>
 					<SectionTitle>Description</SectionTitle>
