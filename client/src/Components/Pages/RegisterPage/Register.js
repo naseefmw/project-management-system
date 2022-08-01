@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
-import Background from "../../Background";
 import { register } from "../../../Services/userService";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  BgContainer,
   Container,
   FormSection,
   FormCard,
@@ -41,9 +39,6 @@ const Register = () => {
 
   return (
     <>
-      <BgContainer>
-        <Background />
-      </BgContainer>
       <Container>
         <FormSection>
           <FormCard>

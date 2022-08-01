@@ -3,9 +3,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { login } from "../../../Services/userService";
-import Background from "../../Background";
 import {
-  BgContainer,
   Container,
   FormSection,
   FormCard,
@@ -34,9 +32,6 @@ const Login = () => {
   };
   return (
     <>
-      <BgContainer>
-        <Background />
-      </BgContainer>
       <Container>
         <FormSection>
           <FormCard>
