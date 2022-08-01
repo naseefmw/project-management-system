@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	${(props) =>
-		props.isImage ? 'background-image: url(' + props.bgImage + ');' : 'background-color: ' + props.bgImage + ';'}
+	   'background-color: ' + props.bgImage + ';'}
 	background-repeat: no-repeat;
 	background-position: 50%;
 	zoom: 1;
