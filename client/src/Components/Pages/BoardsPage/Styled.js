@@ -47,7 +47,7 @@ export const Board = styled.div`
   border-radius: 2px;
   ${(props) =>
     props.isImage
-      ? "background-color: violet;"
+      ? "background-color: #6a1b9a;"
       : "background-color: " + props.link + ";"}
 
   background-position: center center;
@@ -69,8 +69,8 @@ export const Board = styled.div`
 export const AddBoard = styled(Board)`
   background-color: #4a148c;
   font-size: 1rem;
-  transition: 1.5s;
-  opacity: 35%;
+  transition: 1s;
+  opacity: 33%;
   background-size: 200% auto;
   color: white;
   display: flex;

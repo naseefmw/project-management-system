@@ -37,7 +37,7 @@ export const TitleCard = styled.div`
 `;
 
 export const Panel = styled.div`
-  background-color: violet;
+  background-color: #6a1b9a;
   background-size: cover;
   background-position: center center;
   border-radius: 3px;

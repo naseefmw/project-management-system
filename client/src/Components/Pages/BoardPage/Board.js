@@ -73,9 +73,7 @@ const Board = (props) => {
       <Navbar searchString={searchString} setSearchString={setSearchString} />
       <style.Container
         isImage={isImage}
-        bgImage={
-          isImage ? "violet" : backgroundImageLink
-        }
+        bgImage={isImage ? "#6a1b9a" : backgroundImageLink}
       >
         <TopBar />
         {(loading || loadingListService) && <LoadingScreen />}
