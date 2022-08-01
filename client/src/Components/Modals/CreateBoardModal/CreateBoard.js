@@ -53,7 +53,7 @@ export default function CreateBoard(props) {
               updateback={handleUpdate}
               callback={handleClose}
             />
-            <style.PhotosCard>
+            {/*<style.PhotosCard>
               {backgroundImages.map((item, index) => {
                 return (
                   <PhotoCardComponent
@@ -64,7 +64,7 @@ export default function CreateBoard(props) {
                   />
                 );
               })}
-            </style.PhotosCard>
+            </style.PhotosCard>*/}
           </style.Wrapper>
           <style.CreateButton onClick={() => handleClick()}>
             Create Board

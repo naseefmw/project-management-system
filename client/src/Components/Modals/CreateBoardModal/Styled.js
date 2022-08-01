@@ -37,7 +37,7 @@ export const TitleCard = styled.div`
 `;
 
 export const Panel = styled.div`
- background-color: violet;
+  background-color: violet;
   background-size: cover;
   background-position: center center;
   border-radius: 3px;
@@ -163,6 +163,7 @@ export const CloseButton = styled.div`
 `;
 
 export const CreateButton = styled.button`
+  margin: auto;
   width: 35%;
   font-weight: 500;
   padding: 0.4rem;
