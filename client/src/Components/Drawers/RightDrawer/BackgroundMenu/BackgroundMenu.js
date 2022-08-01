@@ -15,9 +15,7 @@ import { boardBackgroundUpdate } from "../../../../Services/boardService";
 const getImages = async () => {
   const newAxios = axios.create();
   delete newAxios.defaults.headers.common["Authorization"];
-  const res = await newAxios.get(
-    "https://trello.com/proxy/unsplash/collections/317099/photos?per_page=30&order_by=latest&page=4"
-  );
+  const res = await newAxios.get("");
   return res.data;
 };
 
@@ -105,7 +103,7 @@ const BackgroundMenu = (props) => {
     <>
       {props.sectionName === "Change background" ? (
         <DefaultMenu {...props} dispatch={dispatch} boardId={boardId} />
-      ) : props.sectionName === "Photos by Unsplash" ? (
+      ) : props.sectionName === "Photos by" ? (
         <PhotosMenu {...props} dispatch={dispatch} boardId={boardId} />
       ) : (
         <ColorsMenu {...props} dispatch={dispatch} boardId={boardId} />
