@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #f6a5c0;
+  background-color: #ffffff;
   background-position: 50%;
   background-size: cover;
   height: 100vh;
@@ -42,9 +42,9 @@ export const Board = styled.div`
   text-align: center;
   font-size: 1rem;
   margin: 0 0.8rem 1rem 0.8rem;
-  width: 190px;
-  height: 90px;
-  border-radius: 5px;
+  width: 200px;
+  height: 92px;
+  border-radius: 2px;
   ${(props) =>
     props.isImage
       ? "background-image: url(" + props.link + ");"
@@ -67,12 +67,10 @@ export const Board = styled.div`
 `;
 
 export const AddBoard = styled(Board)`
-  width: 190px;
-  height: 90px;
-  background-color: #9778ce;
+  background-color: #4a148c;
   font-size: 1rem;
-  transition: 2s;
-  opacity: 65%;
+  transition: 1.5s;
+  opacity: 35%;
   background-size: 200% auto;
   color: white;
   display: flex;

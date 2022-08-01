@@ -60,9 +60,7 @@ const Boards = () => {
                 );
               })}
           {!pending && (
-            <AddBoard onClick={() => setOpenModal(true)}>
-              Create new board
-            </AddBoard>
+            <AddBoard onClick={() => setOpenModal(true)}>Create Board</AddBoard>
           )}
           {openModal && <CreateBoard callback={handleModalClose} />}
         </Wrapper>
