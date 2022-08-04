@@ -1,0 +1,62 @@
+% LaTeX Template for Project Report, Version 2.0
+% Released under Creative Commons Attribution license (CC-BY)
+% Info: http://creativecommons.org/licenses/by/3.0/
+%
+% It is advisable to learn the basics of LaTeX before using this template.
+% A good resource to start with is http://en.wikibooks.org/wiki/LaTeX/
+%
+% Empty space after chapter/section/subsection titles can be used to insert text.
+%
+% Just compile this file using pdflatex after making all required changes.
+\documentclass[12pt,a4paper]{report}
+\usepackage[pdftex]{graphicx} %for embedding images
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{placeins}
+\usepackage{url} %for proper url entries
+\usepackage[backend=biber]{biblatex}
+\bibliography{ref.bib}
+
+
+\begin{document}
+\renewcommand\bibname{References} %Renames "Bibliography" to "References" on ref page
+
+%include other pages
+\input{frontcover.tex}
+\input{certificate.tex}
+\input{visionmission.tex}
+
+
+\pagenumbering{roman} %numbering before main content starts
+\setcounter{page}{0}
+
+\input{acknow.tex}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\input{abstract.tex}
+\addcontentsline{toc}{chapter}{Abstract}
+
+
+\tableofcontents
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+\newpage
+\pagenumbering{arabic} %reset numbering to normal for the main content
+
+\input{chapter1.tex} 
+\input{chapter2.tex}
+\input{chapter3.tex}
+\input{chapter4.tex}
+\input{chapter5.tex}
+\input{chapter6.tex}
+\input{chapter7.tex}
+\input{conclusion.tex}
+\printbibliography[heading=bibintoc]
+\end{document}
