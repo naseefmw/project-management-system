@@ -2,7 +2,6 @@ import * as React from "react";
 import Modal from "@mui/material/Modal";
 import * as style from "./Styled";
 
-import PhotoCardComponent from "./PhotoCardComponent";
 import TitleCardComponent from "./TitleCardComponent";
 import { useDispatch, useSelector } from "react-redux";
 import { createBoard } from "../../../Services/boardsService";
@@ -27,10 +26,6 @@ export default function CreateBoard(props) {
     await createBoard(newBoard, dispatch);
     props.callback();
     setBackground(backgroundImages[0] + smallPostfix);
-  };
-
-  const handleSelect = (link) => {
-    setBackground(link);
   };
 
   const handleClose = () => {

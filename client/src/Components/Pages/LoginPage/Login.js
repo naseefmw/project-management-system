@@ -34,6 +34,18 @@ const Login = () => {
     <>
       <Container>
         <FormSection>
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "10px",
+              marginBottom: "50px",
+              color: "#330e62",
+              fontSize: "40px",
+              fontWeight: "bold",
+            }}
+          >
+            Project Management System
+          </div>
           <FormCard>
             <Form onSubmit={(e) => handleSubmit(e)}>
               <Title>Log in to Project Management System</Title>

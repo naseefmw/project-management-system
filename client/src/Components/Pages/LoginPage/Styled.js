@@ -27,7 +27,7 @@ export const Icon = styled.img`
   })}
 `;
 export const FormSection = styled.section`
-  padding: 12.5%;
+  padding: 10%;
   display: block;
   word-wrap: break-word;
 `;
